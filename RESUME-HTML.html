@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarushi Sharma</title>
+
+    <script src="https://kit.fontawesome.com/1716cc32c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="RESUME-CSS.css">
+    <style>
+
+    </style>
+
+</head>
+<body>
+<header id="body-header">
+    <nav>
+        <ul class="horizontal-lists text-center">
+            <li><a href="#">
+                Home</a>
+
+            </li>
+            <li><a href="#about">
+                About</a>
+
+            </li>
+
+            <li><a href="#myclicks">
+                Clicks</a>
+
+            </li>
+            </li>
+            <li><a href="#exp">
+                Societies</a>
+            </li>
+            <li><a href="#skills">
+                Skills</a>
+
+            </li>
+            <li><a href="#portfolio">
+                Portfolio</a>
+
+            </li>
+
+            <li><a href="#contact">
+                Contact</a>
+
+            </li>
+        </ul>
+    </nav>
+    <div id="name-social-container">
+        <div class="text-center">
+            <h1 id="my-name" style="text-align: center">TARUSHI SHARMA</h1>
+        </div>
+    </div>
+    <ul class="horizontal-lists text-center social-icons">
+        <li>
+            <a href="https://www.linkedin.com/in/tarushi-sharma-2657201b2/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/tarushi.sharma.5648">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/tarushi_.sharma/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+
+</header>
+<main>
+
+    <section id="about">
+        <div id="about-para">
+
+            <p>
+                Hey! I'm Tarushi, a BSc.Computer Science(HONS) student form SGTB Khalsa college.I have keen interest in photography and I often go on photowalks to capture my surroundings.I am also handy with graphic designing platforms like Canva,Illustrator,etc.
+            </p>
+
+        </div>
+    </section>
+    <div class="clicks" id="myclicks" style="align-content: center">
+        <h1 style="text-align: center">My Clicks</h1>
+        <p style="text-align: center">Click on the buttons to change the grid view.</p>
+        <button class="btn" onclick="one()" >1</button>
+        <button class="btn active" onclick="two()">2</button>
+        <button class="btn" onclick="three()">3</button>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="eagle.jpg" style="width:100%">
+            <img src="chai.jpg" style="width:100%">
+            <img src="squi.JPG" style="width:100%">
+            <img src="DSC_0056.NEF.jpg" style="width:100%;overflow: hidden;margin-right: 500px" alt="rose">
+        </div>
+        <div class="column">
+            <img src="girl.jpg" style="width:100%">
+            <img src="ta1.png" style="width:100%">
+            <img src="ta3.png" style="width:100%">
+            <img src="hanger.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="ta7.png" style="width:100%;">
+            <img src="dog.jpg" style="width:100%;" >
+            <img src="road.jpg" style="width:100%">
+        </div>
+        <div class="column">
+        </div>
+    </div>
+
+    <script>
+        var elements = document.getElementsByClassName("column");
+        var i;
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "100%";
+                elements[i].style.flex = "100%";
+            }
+        }
+
+        function two() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "50%";
+                elements[i].style.flex = "50%";
+            }
+        }
+
+        function three() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "25%";
+                elements[i].style.flex = "25%";
+            }
+        }
+        var header = document.getElementById("myHeader");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script><br><br>
+
+
+    <section id="skills">
+        <h1 class="section-heading mb75px ">
+            <span style="font-family:sans-serif;color: white"> SKILLS </span>
+        </h1>
+
+        <div class="skills-display">
+
+            <div class="skill-progress">
+                <div class="eighty-percent mb-light-purple">
+                    <div class="skill-name">
+                        <span> C++ </span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-progress">
+                <div class="eighty-five-percent mb-orange">
+                    <div class="skill-name">
+                        <span> HTML </span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-progress">
+                <div class="fifty-percent mb-blue">
+                    <div class="skill-name">
+                        <span> CSS </span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-progress">
+                <div class="eighty-percent mb-light-purple">
+                    <div class="skill-name">
+                        <span> Canva </span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-progress">
+                <div class="fifty-percent mb-blue">
+                    <div class="skill-name">
+                        <span> Illustrator </span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-progress">
+                <div class="eighty-percent mb-light-purple">
+                    <div class="skill-name">
+                        <span> Photography </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="portfolio">
+        <h1 class="section-heading mb75px">
+            <span style="font-family:sans-serif;color: black">MY PORTFOLIO </span>
+        </h1>
+
+        <table style="align-items: center; text-align: center;margin-left: 10px;align-content: center;color: black">
+            <tr>
+                <td>
+                    <div class="portfolio-image-container"><img src="dps_adobespark.jfif" style="width: 100px; margin-left: 1px"></div>
+                </td>
+
+                <td style="padding-left: 90px;"><div class="portfolio-image-container"><img src="sgtbkhalsa_adobespark.png" style="width: 100px"></div> </td>
+                <td style="padding-left: 90px;"><div class="portfolio-image-container"><img src="cdflogo.jpeg" style="width: 100px"></div> </td>
+            </tr>
+            <tr>
+                <td style="padding: 2px;color: lightslategrey">DPS RKPURAM <br> Class XII(Batch of 2019-20)<br>Class X(Batch of 2017-18)</td>
+                <td style="padding: 2px;padding-left: 90px;color: lightslategrey">SGTB KHALSA COLLEGE <br> BSc.Computer Science(HONS)<br>Batch of 2020-23</td>
+                <td style="padding: 2px;padding-left: 90px;color: lightslategrey">CDF KHALSA COLLEGE <br> PR and Marketing Head<br>Tenure 2021-22</td>
+
+            </tr>
+            <tr style="margin-left: 130px">
+
+                <td><div class="portfolio-image-container"><img src="curieux%20logo.png" style="width: 180px; margin-left: 2px;margin-top: 20px"></div></td>
+                <td style="padding-left: 90px;align-items: center"><div class="portfolio-image-container"><img src="pinhole-logo_adobespark.jfif" style="width: 100px;margin-top: 20px"> </div></td>
+                <td style="padding-left: 90px;"><div class="portfolio-image-container"><img src="comingsoon.gif" style="width: 100px;margin-top: 10px"></div> </td>
+
+            </tr>
+            <tr>
+                <td style="padding: 2px;color: lightslategrey">CurieuX <br> Member<br>Tenure 2020-Present</td>
+                <td style="padding: 2px;padding-left: 90px;color: lightslategrey">Pinhole <br> Member<br>Tenure 2020-Present</td>
+                <td style="padding: 2px;padding-left: 90px;color: lightslategrey;margin-bottom: 50px">New Projects <br> Coming soon<br>2021</td>
+            </tr>
+        </table>
+    </section>
+    <br>
+    <section id="exp" style="background: black">
+
+        <h1 class="section-heading mb75px">
+            <span style="font-family: sans-serif ;color:white;background-color: black" > SOCIETIES </span>
+        </h1>
+
+        <div class="timeline" style="background: black">
+
+            <div class="timeline-box" style="background: black">
+                <div class="timeline-container" style="background: black">
+                    <div class="timeline-logo">
+                        <a href="https://www.instagram.com/cdf_sgtbkc/?hl=en"><img src="cdflogo.jpeg" style="width: 150px ">
+                        </a>
+                    </div>
+                    <h3 class="experience-designation  m0 m-blue" style="color: beige"> Marketing and PR Head </h3>
+                    <h5 class="experience-company-name" style="color: beige"> CDF SGTB KHALSA</h5>
+                    <h5 class="experience-duration m0" style="color: beige"> June 2021 - July 2022 </h5>
+
+                    <p class="experience-description text-align-justify" style="color: white">
+                        Connecting Dreams Foundation SGTB Khalsa Chapter aims to address the SDG-based challenges through entrepreneurial action. It is working to utilize the potential of the youth and directing it towards activities that will lead to inclusive social development, enabling the achievement of SDGs. CDF SGTB works along the lines of the 3C model.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box right ">
+                <div class="timeline-container">
+                    <div class="timeline-logo">
+                        <a href="https://www.instagram.com/curieux.sgtbkhalsa/"> <img src="whitecur.png" style="width: 150px;"></a>
+                    </div>
+                    <h3 class="experience-designation  m0 m-blue" style="color: beige"> Member </h3>
+                    <h5 class="experience-company-name" style="color: beige"> CurieuX-The Computer Science society </h5>
+                    <h5 class="experience-duration m0" style="color: beige"> 2020 - Present </h5>
+                    <p class="experience-description text-align-justify" style="color: white">Curieux (French for curious), is the Computer Society of S.G.T.B Khalsa College, University of Delhi.
+                        The wide spectrum of members is committed to the advancement of individual skill set in the fields of computer sciences and engineering, networking, information processing, robotics and related arts and sciences.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box left ">
+                <div class="timeline-container">
+                    <div class="timeline-logo">
+                        <a href="https://www.instagram.com/pinholephotosoc/"><img src="pinhole-logo_adobespark.jfif" style="width: 150px"></a>
+                    </div>
+                    <h3 class="experience-designation m0 m-blue" style="color: beige"> Member </h3>
+                    <h4 class="experience-company-name" style="color: beige"> Pinhole-Photography Society </h4>
+                    <h5 class="experience-duration m0" style="color: beige"> December 2020 - Present </h5>
+
+                    <p class="experience-description text-align-justify" style="color: white"> Pinhole is the  Photography Society of S.G.T.B. Khalsa College, Delhi University.It inspires new budding photographers to
+                        explore new techniques in the field along with providing them a platform where they can showcase their talent through annual events. </p>
+                </div>
+            </div>
+
+            <div id="timeline-divider">
+                <div class="timeline-traveller">
+                    <div>
+                        <i class="fas fa-plane"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+<br>
+    <!--Contact Section -->
+    </section>
+    <section id="contact">
+                    <h1 class=" section-heading mb50px">
+    <span style="font-family:sans-serif"> CONTACT ME</span>
+    </h1>
+    <div id="contact-container">
+
+        <div id="contact-form-container">
+            <form id="contact-form">
+                <input id="input-name" name="name" type="text" placeholder="*Full name here">
+                <input id="input-email" name="input-email" type="text" required placeholder="*Email here">
+                <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="*Message for me" style="font-family: sans-serif"></textarea>
+                <button class="sub-btn" type="submit">SEND</button>
+            </form>
+        </div>
+        <div id="my-details-container">
+
+            <h3 style="font-family: sans-serif"> Let's Talk/Chat/Meet :) </h3>
+
+            <h3> A-37,New Gupta Colony </h3>
+            <div class="my-details-info-container">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New Delhi, India</span>
+            </div>
+            <div class="my-details-info-container">
+                <i class="fas fa-mobile-alt"></i>
+                <span>+91 9211790589</span>
+            </div>
+            <div class="my-details-info-container">
+                <i class="far fa-envelope"></i>
+                <span>tarushisharma.mk@gmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center social-icons">
+
+        <ul class="social-icons-end">
+
+            <li>
+                <a href="https://www.linkedin.com/in/tarushi-sharma-2657201b2/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/tarushi.sharma.5648">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/tarushi_.sharma/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    </section>
+
+
+</main>
+</body>
+</html>
